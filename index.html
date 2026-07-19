@@ -20,7 +20,7 @@
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
                 <a href="#about" class="hover:text-zinc-100 transition-colors">Обо мне</a>
                 <a href="#skills" class="hover:text-zinc-100 transition-colors">Навыки</a>
-                <a href="#portfolio" class="hover:text-zinc-100 transition-colors">Мои Reels</a>
+                <a href="#portfolio" class="hover:text-zinc-100 transition-colors">Мои работы</a>
                 <a href="#contacts" class="hover:text-zinc-100 transition-colors">Контакты</a>
             </nav>
 
@@ -36,7 +36,7 @@
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-zinc-950 border-b border-zinc-900 py-6 px-6 flex flex-col space-y-4 text-sm font-medium text-zinc-400 transition-all duration-300">
             <a href="#about" class="mobile-link hover:text-zinc-100 transition-colors py-2">Обо мне</a>
             <a href="#skills" class="mobile-link hover:text-zinc-100 transition-colors py-2">Навыки</a>
-            <a href="#portfolio" class="mobile-link hover:text-zinc-100 transition-colors py-2">Мои Reels</a>
+            <a href="#portfolio" class="mobile-link hover:text-zinc-100 transition-colors py-2">Мои работы</a>
             <a href="#contacts" class="mobile-link hover:text-zinc-100 transition-colors py-2">Контакты</a>
         </div>
     </header>
@@ -54,7 +54,7 @@
             <a href="#portfolio" class="px-8 py-3.5 bg-rose-600 hover:bg-rose-500 text-white font-medium rounded-lg transition-all shadow-lg shadow-rose-600/20 text-center">
                 Смотреть работы
             </a>
-            <a href="#contacts" class="px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-800 font-medium rounded-lg transition-all text-center">
+            <a href="https://t.me/overgoddd" target="_blank" class="px-8 py-3.5 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-800 font-medium rounded-lg transition-all text-center">
                 Обсудить проект
             </a>
         </div>
@@ -65,7 +65,7 @@
         <div class="max-w-4xl mx-auto px-4 md:px-6">
             <h2 data-aos="fade-right" class="text-2xl md:text-3xl font-bold mb-8 text-zinc-100">Кто я</h2>
             <div class="grid md:grid-cols-3 gap-8 text-zinc-400 leading-relaxed text-base md:text-lg">
-                <div data-aos="fade-right" data-aos-delay="100" class="md:col-span-2 space-y-4">
+                <div class="md:col-span-2 space-y-4">
                     <p>
                         Привет! Меня зовут <span class="text-zinc-100 font-semibold">Никита</span>, и я превращаю сырые исходники в залипательные вертикальные видео.
                     </p>
@@ -73,7 +73,7 @@
                         Моя главная специализация — монтаж **Reels, Shorts и TikTok**. Я знаю, как зацепить зрителя в первые 2 секунды с помощью динамичных склеек, правильного ритма под музыку и акцентных субтитров. 
                     </p>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="200" class="bg-zinc-900/50 p-6 rounded-xl border border-zinc-800/50 flex flex-col justify-center text-center md:text-left">
+                <div data-aos="fade-left" class="bg-zinc-900/50 p-6 rounded-xl border border-zinc-800/50 flex flex-col justify-center text-center md:text-left">
                     <div class="text-rose-500 text-4xl md:text-5xl font-bold mb-2">3 сек</div>
                     <p class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Время удержания внимания</p>
                 </div>
@@ -124,20 +124,25 @@
         </div>
     </section>
 
-    <!-- Портфолио (Вертикальные видео) -->
+    <!-- Портфолио -->
     <section id="portfolio" class="py-16 md:py-24 border-t border-zinc-900">
         <div class="max-w-5xl mx-auto px-4 md:px-6">
-            <h2 data-aos="fade-up" class="text-2xl md:text-3xl font-bold mb-4 text-zinc-100">Мои работы</h2>
-            <p data-aos="fade-up" data-aos-delay="50" class="text-zinc-400 mb-12 text-sm md:text-base">Нажмите кнопку воспроизведения, чтобы посмотреть примеры роликов прямо здесь.</p>
+            <h2 data-aos="fade-up" class="text-2xl md:text-3xl font-bold mb-4 text-zinc-100 text-center md:text-left">Мои работы</h2>
+            <p data-aos="fade-up" data-aos-delay="50" class="text-zinc-400 mb-12 text-sm md:text-base text-center md:text-left">Нажмите кнопку воспроизведения, чтобы посмотреть примеры роликов прямо здесь.</p>
             
-            <!-- Сетка 3-х вертикальных видео (9:16) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            <!-- Заголовок подраздела: Reels -->
+            <div data-aos="fade-up" class="mb-8">
+                <h3 class="text-lg font-bold text-zinc-200 border-l-4 border-rose-500 pl-3">Вертикальные Reels & Shorts (9:16)</h3>
+            </div>
+
+            <!-- Сетка 2-х вертикальных видео (9:16) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center max-w-3xl mx-auto mb-20">
                 
                 <!-- Видео 1 -->
                 <div data-aos="zoom-in-up" data-aos-delay="50" class="space-y-4 w-full max-w-[320px]">
                     <div class="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-xl">
                         <iframe class="absolute top-0 left-0 w-full h-full" 
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                src="https://www.youtube.com/embed/A4xU0j8DnxA" 
                                 title="Reels 1" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -145,8 +150,8 @@
                         </iframe>
                     </div>
                     <div class="px-2">
-                        <h3 class="font-semibold text-zinc-100 text-sm md:text-base">Динамичный разговорный Reels</h3>
-                        <p class="text-zinc-500 text-xs mt-1">Всплывающие субтитры, зумы, звуковые эффекты.</p>
+                        <h4 class="font-semibold text-zinc-100 text-sm md:text-base">Динамичный Reels</h4>
+                        <p class="text-zinc-500 text-xs mt-1">Трендовый монтаж, всплывающие субтитры, звуковые эффекты.</p>
                     </div>
                 </div>
 
@@ -154,7 +159,7 @@
                 <div data-aos="zoom-in-up" data-aos-delay="100" class="space-y-4 w-full max-w-[320px]">
                     <div class="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-xl">
                         <iframe class="absolute top-0 left-0 w-full h-full" 
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                src="https://www.youtube.com/embed/6kyeXxcau6U" 
                                 title="Reels 2" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -162,29 +167,37 @@
                         </iframe>
                     </div>
                     <div class="px-2">
-                        <h3 class="font-semibold text-zinc-100 text-sm md:text-base">Эстетичный бьюти/тревел ролик</h3>
-                        <p class="text-zinc-500 text-xs mt-1">Работа с цветом, мягкие переходы, расслабляющий ритм.</p>
+                        <h4 class="font-semibold text-zinc-100 text-sm md:text-base">Эстетичный Shorts</h4>
+                        <p class="text-zinc-500 text-xs mt-1">Работа с цветом, мягкие переходы, расслабляющий ритм под музыку.</p>
                     </div>
                 </div>
 
-                <!-- Видео 3 -->
-                <div data-aos="zoom-in-up" data-aos-delay="150" class="space-y-4 w-full max-w-[320px]">
-                    <div class="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-xl">
+            </div>
+
+            <!-- Заголовок подраздела: Горизонтальные видео -->
+            <div data-aos="fade-up" class="mb-8">
+                <h3 class="text-lg font-bold text-zinc-200 border-l-4 border-rose-500 pl-3">Промо & YouTube (16:9)</h3>
+            </div>
+
+            <!-- Блок для 1-го горизонтального видео (16:9) -->
+            <div class="max-w-3xl mx-auto">
+                <div data-aos="zoom-in-up" data-aos-delay="50" class="space-y-4 w-full">
+                    <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-xl">
                         <iframe class="absolute top-0 left-0 w-full h-full" 
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                                title="Reels 3" 
+                                src="https://www.youtube.com/embed/gdgZX-SG0UQ" 
+                                title="YouTube Video" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen>
                         </iframe>
                     </div>
                     <div class="px-2">
-                        <h3 class="font-semibold text-zinc-100 text-sm md:text-base">Промо-видео под тренд</h3>
-                        <p class="text-zinc-500 text-xs mt-1">Быстрый ритмичный монтаж, VFX эффекты в After Effects.</p>
+                        <h4 class="font-semibold text-zinc-100 text-sm md:text-base">Горизонтальный видеомонтаж</h4>
+                        <p class="text-zinc-500 text-xs mt-1">Пример работы с длинным форматом: удержание динамики, мультикамерный монтаж и саунд-дизайн.</p>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
@@ -192,14 +205,14 @@
     <section id="contacts" class="py-16 md:py-24 border-t border-zinc-900 bg-zinc-950 overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
             <h2 data-aos="fade-up" class="text-2xl md:text-3xl font-bold mb-4 text-zinc-100">Обсудить проект</h2>
-            <p data-aos="fade-up" data-aos-delay="50" class="text-zinc-400 mb-8 max-w-md mx-auto text-sm md:text-base">Нужен крутой монтаж для ваших Reels? Напишите мне, обсудим концепцию и форматы.</p>
+            <p data-aos="fade-up" data-aos-delay="50" class="text-zinc-400 mb-8 max-w-md mx-auto text-sm md:text-base">Нужен крутой монтаж для ваших проектов? Напишите мне, обсудим концепцию и форматы.</p>
             
             <div data-aos="zoom-in" data-aos-delay="100" class="flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
-                <!-- Telegram -->
+                <!-- Рабочий Telegram Никиты -->
                 <a href="https://t.me/overgoddd" target="_blank" class="w-full sm:w-auto px-8 py-3.5 bg-zinc-900 hover:bg-rose-600/20 hover:text-rose-400 hover:border-rose-500/30 transition-all rounded-lg border border-zinc-800 text-zinc-300 text-sm font-medium text-center">
                     Telegram
                 </a>
-                <!-- Email -->
+                <!-- Рабочий Email Никиты -->
                 <a href="mailto:overnekit@gmail.com" class="w-full sm:w-auto px-8 py-3.5 bg-zinc-900 hover:bg-rose-600/20 hover:text-rose-400 hover:border-rose-500/30 transition-all rounded-lg border border-zinc-800 text-zinc-300 text-sm font-medium text-center">
                     Email
                 </a>
@@ -215,7 +228,6 @@
     <!-- Скрипт инициализации анимаций скролла (AOS) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Инициализируем анимацию с учетом мобильных (отключаем на совсем мелких экранах, если нужно повысить производительность)
         AOS.init({
             duration: 900, 
             once: true,     
@@ -228,21 +240,17 @@
         const menuIcon = document.getElementById('menu-icon');
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        // Открытие/закрытие при клике на бургер
         menuBtn.addEventListener('click', () => {
             const isHidden = mobileMenu.classList.contains('hidden');
             if (isHidden) {
                 mobileMenu.classList.remove('hidden');
-                // Меняем иконку бургера на крестик
                 menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
             } else {
                 mobileMenu.classList.add('hidden');
-                // Возвращаем иконку бургера
                 menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
             }
         });
 
-        // Закрытие меню при клике на любую ссылку
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
